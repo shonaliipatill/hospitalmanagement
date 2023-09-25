@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Website</title>
+    <link rel="stylesheet" type="text/css" href="pharmacy.css">
+</head>
+<body>
+    <h1>Welcome to Our Hospital</h1>
+
+    <div id="pharmacyServices">
+        <h2>Pharmacy Services</h2>
+        <button onclick="openPharmacyModal()">Order Medicine</button>
+    </div>
+
+    <div id="pharmacyModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closePharmacyModal()">&times;</span>
+            <h2>Order Medicine</h2>
+            <form id="pharmacyOrderForm" onsubmit="submitPharmacyOrder(event)">
+                <label for="medicineName">Medicine Name:</label>
+                <input type="text" id="medicineName" required><br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required><br><br>
+                <button type="submit">Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="pharmacy.js"></script>
+</body>
+</html>

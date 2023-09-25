@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Management System</title>
+    <link rel="stylesheet" href="labtest.css">
+</head>
+<body>
+    <header>
+        <h1>Lab Test Management System</h1>
+    </header>
+
+    <section id="testRequest">
+        <h2>Test Request Creation</h2>
+        <form action="process_test_request.php" method="post">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+            <br>
+            <label for="testType">Test Type:</label>
+            <input type="text" id="testType" name="testType" required>
+            <br>
+            <button type="submit">Create Test Request</button>
+        </form>
+    </section>
+
+    <section id="testDetails">
+        <h2>Test Details</h2>
+        <!-- Display test details, status, and results -->
+    </section>
+
+    <section id="testScheduling">
+        <h2>Test Scheduling</h2>
+        <!-- Scheduling options and availability -->
+    </section>
+
+    <section id="testResults">
+        <h2>Test Results</h2>
+        <!-- Display test results and attachments -->
+    </section>
+
+    <!-- Include other sections and functionalities as needed -->
+
+    <footer>
+        <p>&copy; 2023 Lab Test Management System</p>
+    </footer>
+
+    <script src="labtest.js"></script>
+</body>
+</html>

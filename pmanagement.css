@@ -1,0 +1,98 @@
+/* pmanagement.css */
+
+/* Reset default margin and padding */
+html, body, div, h1, h2, p, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Content container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+}

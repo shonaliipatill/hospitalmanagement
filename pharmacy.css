@@ -1,0 +1,109 @@
+/* pharmacy.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Pharmacy Services section */
+#pharmacyServices {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#pharmacyServices h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#pharmacyServices button {
+    background-color: #fff;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pharmacyServices button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Pharmacy Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#pharmacyModal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#pharmacyOrderForm label {
+    font-size: 16px;
+}
+
+#pharmacyOrderForm input[type="text"],
+#pharmacyOrderForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#pharmacyOrderForm button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pharmacyOrderForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}
